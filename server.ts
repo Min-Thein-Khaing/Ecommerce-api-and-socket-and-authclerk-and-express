@@ -5,6 +5,7 @@ import { connectDB } from "./config/db.js";
 import { clerkMiddleware } from "@clerk/express";
 import UserRoute from "./routes/user.route.js";
 import ProductRoute from "./routes/product.route.js";
+import MessageRoute from "./routes/product.route.js";
 import makeAdmin from "./script.js";
 const app = express();
 app.use(clerkMiddleware());
@@ -20,6 +21,7 @@ app.get("/", (req: Request, res: Response) => {
 });
 app.use("/api/clerk", UserRoute);
 app.use("/api/posts",ProductRoute)
+app.use("/api/message",MessageRoute)
 
 
 
