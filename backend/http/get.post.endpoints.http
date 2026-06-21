@@ -1,0 +1,1 @@
+GET http://locahost:3000/api/posts

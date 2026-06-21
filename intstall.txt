@@ -1,5 +1,0 @@
-create mkdir express-mongo-mongoose-eCommerce
-
-npm init -y
-npm install express cors dotenv
-npm install -D typescript tsx @types/node ts-node @types/express nodemon @types/cors
